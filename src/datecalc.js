@@ -1,4 +1,4 @@
-import { DateTime } from "./luxon/luxon.js"; // 1
+import { DateTime } from "luxon";
 import { formatError } from "./utils.js"; // 2
 
 export class DateCalc {
