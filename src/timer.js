@@ -1,4 +1,4 @@
-import { _Howl as Howl } from "./howler/howler.js";
+import { Howl } from 'howler';
 
 export class Timer {
     constructor(id) {
@@ -7,9 +7,7 @@ export class Timer {
         this.timeinterval = 0;
         this.endtime = 0;
         this.start = 0;
-        this.sound = new Howl(
-            { src: ['./sounds/Usb-connection-sound-effect.mp3'] }
-        );
+        this.sound = new Howl({ src: ['./sounds/Usb-connection-sound-effect.mp3'] });
     }
 
     getTimeRemaining() {
@@ -83,11 +81,3 @@ export class Timer {
         }
     }
 }
-
-
-
-
-
-
-
-
